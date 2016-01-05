@@ -32,4 +32,4 @@ NSRE2000all=smartbind(data5,data7,data9,data11,data13)
 NSRE2000all[NSRE2000all==""] <- NA #stata doesnt like blanks, replaces them with NA's
 
 #writes it all to on stata file
-write.dta(NSRE2000all, "NSRE2000all.dta",convert.factors = "numeric") 
+write.dta(NSRE2000all, "//Aa.ad.epa.gov/ord/NAR/Users/EC1/NMerri02/Net MyDocuments/Rec_participation/NSRE/NSRE all/NSRE2000all.dta") 
