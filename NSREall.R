@@ -20,6 +20,13 @@ data9=read.sas7bdat.parso("version9.sas7bdat")
 data11=read.sas7bdat.parso("version11.sas7bdat")
 data13=read.sas7bdat.parso("version13.sas7bdat")
 
+#makes all the variables the same case so that they combine.
+names(data5)=tolower(names(data5))
+names(data7)=tolower(names(data7))
+names(data9)=tolower(names(data9))
+names(data11)=tolower(names(data11))
+names(data13)=tolower(names(data13))
+
 #writes each seperately as STATA files
 write.dta(data5, "NSRE5.dta") 
 write.dta(data7, "NSRE7.dta") 
