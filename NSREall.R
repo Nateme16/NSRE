@@ -9,6 +9,7 @@ library(foreign)
 library(plyr)
 library(haven)
 library(gtools)
+library(zipcode)
 
 #this is the directory where the NSRE data is located
 setwd("//Aa.ad.epa.gov/ord/NAR/Users/EC1/NMerri02/Net MyDocuments/Rec_participation/NSRE/NSRE all")
