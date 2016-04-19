@@ -11,11 +11,13 @@ library(haven)
 library(gtools)
 library(zipcode)
 
-load("C:/Users/nmerri02/Desktop/GitHub/NSRE/NSRE_zip.RData")
-
+load("//Aa.ad.epa.gov/ord/NAR/Users/EC1/NMerri02/Net MyDocuments/Rec_participation/NSRE/NSRE all/NSRE2000all.RData")
+data(zipcode)
 NSRE2000all$zip2=clean.zipcodes(NSRE2000all$zipcode)
 
 NSRE2000all_zip=merge(NSRE2000all,zipcode,by.x='zip2',by.y='zip')
+
+save(NSRE2000all_zip,file="NSRE2000all_zip.RData")
 
 
 #writes it all to on stata file

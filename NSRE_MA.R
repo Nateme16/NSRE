@@ -1,4 +1,4 @@
-##NSRE to STATA##
+
 
 #This file takes the NSRE data and estimates participation, # of trips and travel distribution
 
@@ -11,12 +11,7 @@ library(haven)
 library(gtools)
 library(zipcode)
 
-load("C:/Users/nmerri02/Desktop/GitHub/NSRE/NSRE_zip.RData")
-
-NSRE2000all$zip2=clean.zipcodes(NSRE2000all$zipcode)
-
-NSRE2000all_zip=merge(NSRE2000all,zipcode,by.x='zip2',by.y='zip')
-
+load("C:/Users/nmerri02/Desktop/GitHub/NSRE/NSRE2000all_zip.RData")
 
 # Beach visitation question  ---------------------------------------------------------------
 
